@@ -7,8 +7,9 @@ body * {
     box-sizing: border-box;
 }
 .wrapper {
- max-width: 1250px;
- margin: 0 auto;
+    max-width: 1250px; /* ограничение максимальной ширины контента*/
+    margin: 0 auto; /* выравнивание по центру */ 
+    padding: 0 20px;
 }
 
 h3{
@@ -166,6 +167,7 @@ p{
     float: right;
     max-width: 100%;
     margin-left: 626px;
+    margin-top:-180px;
 }
 
 .title_projects{
@@ -188,21 +190,38 @@ p{
     color: #FFFFFF;
     text-transform: none;
 }
-/* .projects_info{
-
-} */
+.projects_item{
+    width: 45%;
+}
+h3{
+    text-align: center;
+}
+.projects_info{
+    display: flex;
+    flex-wrap: wrap;
+}
 .projects-info_text{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
     text-transform: uppercase;
     color: #E3B873;
-    display: grid;
-    grid-template-columns: repeat(2, 2em);
-    grid-template-rows: repeat(4, 2em);
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 42px;
+    margin-bottom: 9px;
+    text-align: start;
 }
+.proj-text{
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-transform: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
 /* .one{
     text-align: left;
 }
