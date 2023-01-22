@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yeseva+One" />
+    <title>Main</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-content">
+        <div class="logo">
+            IC "Repair Design Project"
+        </div>
+       <nav>   <!--все списки должны быть списками, а навигация - тоже список -->
+            <ul class="header-navigation">
+                <li class="navigation_item"><a href="#"><span class="home"> HOME </span></a></li>
+                <li class="navigation_item"><a href="#"> PROJECTS </a></li>
+                <li class="navigation_item"><a href="#"> MEASUREMENT </a></li>
+                <li class="navigation_item"><a href="#"> TEAM </a></li>
+                <li class="navigation_item"><a href="#"> REVIEWS </a></li>
+                <li class="navigation_item"><a href="#"> CONTACTS </a></li>
+                <li class="navigation_item"><a href="#"> <span class="number"> +7 (928) 768-32-39 </span> </a></li>
+            </ul>
+        </nav>
+        <button class="button">REQUEST A CALL</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="base">
+            <div class="wrapper base-wrapper">
+                <h1 class="title">
+                    Turkey Repair in the<br> city of <span class="city">Rostov-on-Don</span> 
+                </h1>
+                <p class="text">Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work
+                </p>
+                <button class="button">calculate the post</button>
+                <button class="button-submit">submit your application</button>
+            </div>
+            <div class="base-overlay"></div>
+        </section>
+        <section class="places">
+            <div class="wrapper places-wrapper">
+                <ul class="places-navigation">
+                    <li class="places-navigation_item"><a href="#"><span class="admiral">Rostov-on-Don, Admiral  </span></a></li>
+                    <!-- insert links like <a href="#rostov-adm"> -->
+                    <li class="places-navigation_item"><a href="#"> Sochi Thieves </a></li>
+                    <li class="places-navigation_item"><a href="#"> Rostov-on-Don Patriotic </a></li>
+                </ul>
+                <div class="completed-projects">
+                    <div class="projects-wrapper">
+                        <h2 class="title_projects">
+                            completed <br>projects 
+                        </h2>
+                        <p class="projects-text"> Only a small part of the work performed by our company is presented<br>
+                            on the site. For 14 years on in the construction<br>
+                            market we have made happy more than 1000 families</p>
+                            <div class="slider">
+                                <img src="../18.Project/images/image 2.1.png" class="image">
+                                    <div class="slider_arrows">
+                                        <div class="slider-arrow_left"></div>
+                                        <div class="slider-arrow_right"></div>
+                                    </div>
+                            </div>
+                        <div class="projects_info">
+                            <div class="projects-item">
+                                <h3 class="projects-info_text one">
+                                    City:
+                                </h3>
+                                <span class="proj-text">
+                                    Rostov-on-Don<br>
+                                    LCD admiral
+                                </span>
+                            </div>
+                            <div class="projects-item">
+                                <h3 class="projects-info_text two">Apartment area
+                                </h3>
+                                <span class="proj-text">
+                                    81 m2
+                                </span>
+                            </div>
+                            <div class="projects-item">
+                                <h3 class="projects-info_text 3">Repair time:
+                                </h3>
+                                <span class="proj-text">
+                                    3.5 months
+                                </span>
+                            </div>
+                            <div class="projects-item">
+                                <h3 class="projects-info_text 4">Repair cost:
+                                </h3>
+                                <span class="proj-text">
+                                    upon request
+                                </span>
+                            </div>
+                            <div class="projects_buttons">
+                                <div class="buttons-circle"></div>
+                                <div class="buttons-circle"></div>
+                                <div class="buttons-circle"></div>
+                            </div>
+                        </div>
+                        <div class="completed-projects_image">
+                            <img class="image projects_image" src="./images/image 6.jpg" alt="фото проекта в Ростове-на-Дону">
+                        </div> 
+
+                    </div>
+
+                </div>
+            </div>
+        
+            <div class="base-overlay"></div>
+        </section>
+    
+
+        <!-- <section class="control background--mobile">
+            <div class="wrapper control-content">
+                <h3 class="subtitle control__subtitle">
+                    online control
+                </h3>
+                <div class="elements control-element">
+                    <img src="./images/control_icon.svg" alt="иконка" />
+                </div>
+                <div class="control__image">
+                    <img src="./images/control_video.png" class="image"/>
+                    <div class="control-overlay">
+                        <div class="image-play background--yellow">
+                            <span class="image__traingle">
+                            </span>
+                        </div>
+                    </div>    
+                </div>
+                <div class="control__underline">
+                </div>
+                <p class="control__text">
+                    At each facility, a camera is installed that broadcasts the progress of work on the
+                    clock. At any time, you can go to our website and monitor the progress of work in
+                    your apartment. You can watch the live broadcast from one of our facilities!
+                    Leave a request below and you will receive a link to the broadcast.
+                </p>
+                <form class="control__form" action=" " method="get">
+                    <fieldset class="form__name control-form__name">
+                        <label for="control-name color--mobile" class="control__label">
+                            Name
+                        </label>
+                        <input class="input control__input background--mobile" id="control-name" type="text" placeholder="What is your name:">
+                    </fieldset>
+                    <fieldset class="form__phone control-form__phone">
+                        <label for="control-phone color--mobile" class="control__label">
+                            Phone
+                        </label>
+                        <input class="input control__input background--mobile" id="control-phone" type="text" placeholder="Your phone number:">
+                    </fieldset>
+                    <button class="button form__button control-form__button background--yellow" type="submit">
+                        Submit
+                    </button>
+                    <fieldset class="form__acception control-form__acception">
+                        <label class="control-label">
+                            <input class="form__checkbox" type="checkbox">
+                            <span class="checkbox-background">
+                            </span>
+                            <span class="checkbox-text checkbox-text--black">
+                                I agree to the processing of personal data
+                            </span>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+     -->
+    
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
+<!-- 1256px ширина контента
+блоки разделить - 1 хэдер
+2- шоновая картинка и текст абсолютнопозиционированный слой перекрывает фоновую картинку( все остальное - опзишн статик) 
+3 - завершенные проекты черный фон делаем нижний паддинг 90px а следующему блоку
+4 - онлайн контрол задать отрицатеьный марджин -90пх
+бади - белый фон, а черный нужным 
+
+
+types of repair - делаем блок целиком фоном картинка? внутри блок - марджин от края родитля 290пх(марджин топ) у всех блоков родительский контейнер.
+ Для десктопной - дисплей флекс, или спейс битвин (джастифай контент) а для мобилок дисплей флексу - флекс дирекшн колан -->
