@@ -582,6 +582,71 @@ button, button:hover, button:focus, button:active
     position: relative;
 }
 
+/* fourth */
+.repair{
+    padding: 148px 0 133px;
+}
+
+.repair-title{
+    text-align: center;
+}
+.icon{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.repair-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.repair-type img{
+    max-width: 400px;
+
+}
+.repair-type_1{
+    width: 330px;
+    height: 300px;
+    background: #FFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding-top: 25px;
+    margin: -125px 50px 70px 30px;
+    position: relative;
+    z-index: 1;
+}
+.repair-type-title{
+    font-size: 18px;
+    padding-left: 34px;
+    margin-bottom: 13px;
+    text-transform: none;
+}
+.repair-type-list{
+    color: #959595;
+    font-size: 13px;
+    line-height: 27px;
+    padding-left: 34px;
+}
+.repair-type-item:before{
+    content: '';
+    display: inline-block;
+    background: #959595;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 5px 2px;
+}
+.repair-type-price{
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    width: 228px;
+    height: 54px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repair-type_price-title {
+    color: #fff;
+}
 /* media quiery */
 
 @media screen and (max-width: 1200px) {
@@ -603,7 +668,7 @@ button, button:hover, button:focus, button:active
         width: 60%;
     }
   
-    .repair-wrap {
+    .repair-wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -750,7 +815,7 @@ button, button:hover, button:focus, button:active
         padding-bottom: 250px;
     }
 
-    .repair-wrap {
+    .repair-wrapper {
         flex-direction: column;
     }
 
@@ -763,7 +828,7 @@ button, button:hover, button:focus, button:active
         width: 100%;
     }
 
-    .repair-type__wrap {
+    .repair-type_1 {
         width: 270px;
         margin-left: 0;
     }
