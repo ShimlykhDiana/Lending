@@ -17,7 +17,7 @@
         </div>
        <nav>   <!--все списки должны быть списками, а навигация - тоже список -->
             <ul class="header-navigation">
-                <li class="navigation_item"><a href="#"><span class="home"> HOME </span></a></li>
+                <li class="navigation_item"><a href="#"> HOME </a></li>
                 <li class="navigation_item"><a href="#"> PROJECTS </a></li>
                 <li class="navigation_item"><a href="#"> MEASUREMENT </a></li>
                 <li class="navigation_item"><a href="#"> TEAM </a></li>
@@ -38,19 +38,19 @@
                 </h1>
                 <p class="text">Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work
                 </p>
-                <button class="button">calculate the post</button>
-                <button class="button-submit">submit your application</button>
+                <button class="button-calculate button">calculate the post</button>
+                <button class="button-submit button">submit your application</button>
             </div>
             <div class="base-overlay"></div>
         </section>
+
         <section class="places">
             <div class="wrapper places-wrapper">
-                <ul class="places-navigation">
-                    <li class="places-navigation_item"><a href="#"><span class="admiral">Rostov-on-Don, Admiral  </span></a></li>
-                    <!-- insert links like <a href="#rostov-adm"> -->
-                    <li class="places-navigation_item"><a href="#"> Sochi Thieves </a></li>
-                    <li class="places-navigation_item"><a href="#"> Rostov-on-Don Patriotic </a></li>
-                </ul>
+                <div class="places_nav">
+                    <a class="places-navigation_item" href="#control">Rostov-on-Don, Admiral </a>
+                    <a class="places-navigation_item" href="#control"> Sochi Thieves </a>
+                    <a class="places-navigation_item" href="#control">Rostov-on-Don Patriotic </a>
+               </div> 
                 <div class="completed-projects">
                     <div class="projects-wrapper">
                         <h2 class="title_projects">
@@ -59,118 +59,115 @@
                         <p class="projects-text"> Only a small part of the work performed by our company is presented<br>
                             on the site. For 14 years on in the construction<br>
                             market we have made happy more than 1000 families</p>
-                            <div class="slider">
-                                <img src="../18.Project/images/image 2.1.png" class="image">
-                                    <div class="slider_arrows">
-                                        <div class="slider-arrow_left"></div>
-                                        <div class="slider-arrow_right"></div>
-                                    </div>
-                            </div>
-                        <div class="projects_info">
-                            <div class="projects-item">
-                                <h3 class="projects-info_text one">
-                                    City:
-                                </h3>
-                                <span class="proj-text">
-                                    Rostov-on-Don<br>
-                                    LCD admiral
-                                </span>
-                            </div>
-                            <div class="projects-item">
-                                <h3 class="projects-info_text two">Apartment area
-                                </h3>
-                                <span class="proj-text">
-                                    81 m2
-                                </span>
-                            </div>
-                            <div class="projects-item">
-                                <h3 class="projects-info_text 3">Repair time:
-                                </h3>
-                                <span class="proj-text">
-                                    3.5 months
-                                </span>
-                            </div>
-                            <div class="projects-item">
-                                <h3 class="projects-info_text 4">Repair cost:
-                                </h3>
-                                <span class="proj-text">
-                                    upon request
-                                </span>
-                            </div>
-                            <div class="projects_buttons">
-                                <div class="buttons-circle"></div>
-                                <div class="buttons-circle"></div>
-                                <div class="buttons-circle"></div>
+                    
+                        <div class="control-info-menu">
+                            <ul class="projects-item">
+                                <li class="projects-info-item">
+                                    <h4 class="projects-info-title">
+                                        City:
+                                    </h4>
+                                    <span class="projects-info-text control-info-text1">
+                                        Rostov-on-Don<br> LCD admiral
+                                    </span>
+                                </li>
+                                <li class="projects-info-item margin-media">
+                                    <h4 class="projects-info-title">
+                                        apartment area:
+                                    </h4>
+                                    <span class="projects-info-text control-info-text2">
+                                        82 m2
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="projects-item">
+                                <li class="projects-info-item projects-info_item-margin">
+                                    <h4 class="projects-info-title">
+                                        Repair time:
+                                    </h4>
+                                    <span class="projects-info-text control-info-text3">
+                                        3.5 months
+                                    </span>
+                                </li>
+                                <li class="projects-info-item">
+                                    <h4 class="projects-info-title">
+                                        Repair cost:
+                                    </h4>
+                                        <span class="projects-info-text">
+                                            Upon request
+                                        </span>
+                                </li>
+                            </ul>
+                            <div class="image-slider">
+                                <div><img class="control-pfeil__left" src="./images/arrow-left.png" alt=""></div>
+                                <span class="control-slayer__radius"> </span>
+                                <span class="control-slayer__radius"> </span>
+                                <span class="control-slayer__radius"> </span>
+                                <div><img class="control-pfeil__right"src="./images/arrow-right.svg" alt=""></div>
                             </div>
                         </div>
-                        <div class="completed-projects_image">
-                            <img class="image projects_image" src="./images/image 6.jpg" alt="фото проекта в Ростове-на-Дону">
-                        </div> 
-
-                    </div>
-
+                    </div>  
+                            <img src="./images/image 2.1.png" alt="Room" class="control-slayer__img">
+                            <!-- <img src="./images/image 2.jpg" alt="Room" class="control-slayer__img"> -->
                 </div>
-            </div>
-        
-            <div class="base-overlay"></div>
-        </section>
+            </div>                          
+         </section>
+
     
 
-        <!-- <section class="control background--mobile">
-            <div class="wrapper control-content">
-                <h3 class="subtitle control__subtitle">
-                    online control
-                </h3>
-                <div class="elements control-element">
-                    <img src="./images/control_icon.svg" alt="иконка" />
-                </div>
-                <div class="control__image">
-                    <img src="./images/control_video.png" class="image"/>
-                    <div class="control-overlay">
-                        <div class="image-play background--yellow">
-                            <span class="image__traingle">
-                            </span>
+        <section class="control">
+            <div class="wrapper control_content">
+                <h3 class="control_below">online control</h3>
+                    <div class="elements control-elements">
+                        <div class="camera">  
+                            <img src="./images/camera-group.png" alt="icon"/>
                         </div>
-                    </div>    
+                    </div>
+            
+            <div class="video">
+                <img class="play-button" src="./images/play-button.png"/>
+            </div>
+    
+            <div >
+                <img class="long-line" src="./images/long-line.png">
+            </div>
+            <div class="video-text">
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
+                you
+                can go to our website and monitor the progress of work in your apartment. You can watch the live
+                broadcast
+                from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+            </div>
+          <div class="input">
+                <div class="video-form__item">
+                    <div class="name-form">name</div>
+                    <div><input class="input-style" type="text" placeholder="What is your name:"></div>
                 </div>
-                <div class="control__underline">
+                <div>
+                    <div class="name-form">phone</div>
+                    <div><input class="input-style" type="text" placeholder="Your phone number:"></div>
                 </div>
-                <p class="control__text">
-                    At each facility, a camera is installed that broadcasts the progress of work on the
-                    clock. At any time, you can go to our website and monitor the progress of work in
-                    your apartment. You can watch the live broadcast from one of our facilities!
-                    Leave a request below and you will receive a link to the broadcast.
-                </p>
-                <form class="control__form" action=" " method="get">
-                    <fieldset class="form__name control-form__name">
-                        <label for="control-name color--mobile" class="control__label">
-                            Name
-                        </label>
-                        <input class="input control__input background--mobile" id="control-name" type="text" placeholder="What is your name:">
-                    </fieldset>
-                    <fieldset class="form__phone control-form__phone">
-                        <label for="control-phone color--mobile" class="control__label">
-                            Phone
-                        </label>
-                        <input class="input control__input background--mobile" id="control-phone" type="text" placeholder="Your phone number:">
-                    </fieldset>
-                    <button class="button form__button control-form__button background--yellow" type="submit">
-                        Submit
-                    </button>
-                    <fieldset class="form__acception control-form__acception">
-                        <label class="control-label">
-                            <input class="form__checkbox" type="checkbox">
-                            <span class="checkbox-background">
-                            </span>
-                            <span class="checkbox-text checkbox-text--black">
-                                I agree to the processing of personal data
-                            </span>
-                        </label>
-                    </fieldset>
-                </form>
+                <div>
+                    <button class="button-control button">Submit</button>
+                </div>
+            </div>
+            <div class="checkbox-type">
+                    <input type="checkbox" id="checkbox-types" class="checkbox-types">
+                    <label class="agree" for="checkbox-types">I agree to the processing of personal data</label>
+            </div>
+            <div>
+                <button class="button-control-below">Submit</button>
+            </div>
             </div>
         </section>
-     -->
+        
+
+
+
+        
+            
+            
+        
+
     
     </main>
     <footer>
