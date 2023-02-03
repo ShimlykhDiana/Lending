@@ -47,10 +47,13 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
     margin-bottom: 13px;
-    text-align: center;
+    font-family: 'Yeseva One';
+    font-weight: 550;
+    font-size: 20px;
     line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 a, a:hover, a:active {
@@ -799,8 +802,143 @@ button, button:hover, button:focus, button:active
     margin-top: 138px;
     margin-bottom: 47px;
 }
+.variants-link{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 38px;
+    padding-bottom: 2px;
+}
+.variants-link:hover{
+    color: #E3B873;
+    border-bottom:1px solid;
+}
+.variants-wrap_1{
+    margin-left: 172px;
+}
+.pic1{
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+.pic2{
+    display: block;
+    margin-top: -112px;
+    margin-bottom: 40px;
+}
+.pic3{
+    display: block;
+    margin-bottom: -40px;
+}
+.pic4{
+    display: block;
+}
 
 
+/* seventh */
+.clients-titile{
+    color: #181818;
+    text-align: center;
+    font-weight: 800;
+}
+.client-icon{
+    margin-bottom: 24px;
+}
+.clients-text{
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 50px;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.comments-wrap{
+    width: 376px;
+    height: 428px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 24px 35px 50px 0;
+}
+.comments-item{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.face-icon{
+    margin-bottom: 10px;
+}
+.comments-title{
+    font-family: 'Yeseva One';
+    width: 175px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    margin-left: 23px;
+}
+
+.comments-text{
+    font-family: 'Nunito Sans';
+    color: #959595;
+    font-size: 13px;
+    line-height: 180%;
+    padding-left: 20px;
+}
+.comments-info{
+    width: 293px;
+    background-color: #e3b873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    margin-top: 55px;
+}
+.comments-info{
+    width: 293px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    margin-top: 55px;
+}
+.comments-size{
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    padding: 11px 17px;
+    border-right: 1px solid white;
+    font-family: 'Yeseva One';
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase
+}
+.comments-size::before{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background: url(../images/size.svg) no-repeat;
+    margin: 0 5px -10px 0;
+}
+.comments-days{
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    padding: 11px 17px;
+    font-family: 'Yeseva One';
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase
+}
+.comments-days::before{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background: url(../images/day.svg) no-repeat;
+    margin: 0 5px -10px 0;
+}
+.clients-screen{
+    background: url(../images/screen.svg);
+    height: 449px;
+    -webkit-filter: opacity(.1);
+    filter: opacity(0.1);
+}
 
 /* media quiery */
 
@@ -829,7 +967,7 @@ button, button:hover, button:focus, button:active
         flex-wrap: wrap;
     }
 
-    .fantasies-wrap__margin {
+    .variants-wrap_1 {
         margin: 0;
     }
 
