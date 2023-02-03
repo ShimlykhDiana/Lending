@@ -111,7 +111,7 @@ button, button:hover, button:focus, button:active
     /* .footer   вставить к хэдеру */
 }
 
-.header-content {      /*.footer-content потом вставить*/
+.header-content {     
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -940,25 +940,112 @@ button, button:hover, button:focus, button:active
     filter: opacity(0.1);
 }
 
+
+/* eighth */
+.contacts{
+    background: #000 url(../images/contacts.svg) no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 60px;
+    position: relative;
+}
+.contacts-form-wrap{
+    width: 882px;
+    position: absolute;
+    top: -243px;
+    left: 50%;
+    margin-left: -441px;
+}
+.contacts-form{
+    background: #181818;
+    padding: 35px 181px;
+    margin: 0 auto;
+}
+.contacts-form-title{
+    color: #FFFFFF;
+}
+.contacts-flex{
+    display: flex;
+}
+.c-f-w{
+    margin-right: 80px;
+}
+.contacts-form-text{
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 47px;
+}
+.contacts-input{
+    font-family: Nunito Sans, sans-serif;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    line-height: 23px;
+    padding-right: 70px;
+}
+.contacts-check{
+    margin: 47px auto 50px;
+}
+#contacts-check{
+    display: none;
+}
+#contacts-check + label::before{
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    border: 2px solid #E3B873;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 10px;
+}
+#contacts-check:checked + label::before{
+    background-color: #E3B873;
+    background-image: url("../images/checked.png");
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contacts-form-checkbox-span{
+    color: #FFFFFF;
+}
+.contacts-form-submit{
+    font-family: 'Nunito Sans';
+    display: block;
+    margin: 0 auto 34px;
+    font-size: 13px;
+    padding: 15px 74px;
+    font-style: normal;
+}
+.contants-info-title{
+    color: #E3B873;
+    padding-top: 290px;
+}
+.contacts-info-icon{
+    margin-top: 20px;
+    text-align: center;
+}
+.contacts-info-icon_mrg{
+    margin-right: 15px;
+}
+.contacts-info-map{
+    display: block;
+    margin: 23px auto 0;
+}
+.mobile{
+    display:none;
+}
+
 /* media quiery */
 
 @media screen and (max-width: 1200px) {
-    .header__tel {
+    .number {
         display: none;
-    }
-
-    .control-menu__item {
-        margin-right: 0;
-        margin-left: 60px;
-    }
- */
-    .control-slayer__img {
-        width: 50%;
-
-    }
-
-    .control-slayer {
-        width: 60%;
     }
   
     .repair-wrapper {
@@ -982,34 +1069,48 @@ button, button:hover, button:focus, button:active
         display: none;
     }
 
-    .header__tel {
+    .number {
         display: block;
     }
 
-    .header__btn {
+
+    .button-calculate {
         display: none;
     }
-
-    .bottom-panel {
-        padding: 85px 0 61px;
+    .button-submit {
+        display: none;
     }
-
-    .bottom-panel__title {
-        font-size: 23px;
-        line-height: 132%;
+    .base-wrapper{
+        display:inline-block;
+        width: 300px;
     }
-
-    .bottom-panel__text {
-        font-size: 14px;
-        line-height: 135%;
-        margin: 16px 0 50px;
-    }
-
-    .bottem-panel__butten {
+    .title{
         margin: 0;
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .city{
+        margin: 0;
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color:#E3B873;
+    }
+    .text{
+        font-size: 16px;
+
     }
 
-    .btn {
+
+    .button {
         width: 100%;
         margin-bottom: 26px;
     }
@@ -1051,16 +1152,7 @@ button, button:hover, button:focus, button:active
         
        
     }
- */
-    .control-slayer {
-        display: none;
-    }
-
-    .control-slayer__img {
-        width: 100%;
-        margin-top: 75px;
-    }
-
+    
     .control {
         margin-top: -1018px;
     }
@@ -1076,10 +1168,13 @@ button, button:hover, button:focus, button:active
         margin: 28px auto 21px;
     }
 
-    .video-form__wrap {
-        flex-direction: column;
-        align-items: normal;
-        position: relative;
+    .agree{
+        justify-content: start;
+        
+    }
+    .button-control-below{
+        position: absolute;
+        top: 315px;
     }
 
     .video-form__title {
@@ -1134,21 +1229,18 @@ button, button:hover, button:focus, button:active
         display: none;
     }
 
-    .client {
+    .clients {
         display: none;
     }
 
-    .footer {
-        display: none;
-    }
 
-    .kont {
+    .contacts {
         display: none;
     }
 
     .mobile {
         display: block;
-        background: #000;
+        background: #181818;
         padding-bottom: 50px;
         margin: 0 auto;
         position: relative;
@@ -1174,22 +1266,22 @@ button, button:hover, button:focus, button:active
         margin: 0 auto;
     }
 
-    .mobil-form {
+    .mobile-form {
         padding-top: 200px;
     }
 
-    .mobil-form__title {
-        color: #fff;
+    .mobile-form-title {
+        color: #FFFFFF;
     }
 
-    .mobile-form__text {
+    .mobile-form-text {
         display: block;
         font-size: 13px;
         color: rgba(255, 255, 255, 0.5);
         margin-top: 47px;
     }
 
-    .mobile-form__input {
+    .mobile-form-input {
         font-family: Nunito Sans, sans-serif;
         display: block;
         width: 100%;
@@ -1202,15 +1294,15 @@ button, button:hover, button:focus, button:active
         padding-right: 70px;
     }
 
-    .mobile-form__check {
+    .mobile-form-check {
         margin: 47px auto 50px;
     }
 
-    #mobile-form__daten {
+    #mobile-from-checkbox {
         display:none;
     }
 
-    #mobile-form__daten + label::before {
+    #mobile-from-checkbox + label::before {
         width: 18px;
         height: 18px;
         border-radius: 1px;
@@ -1222,18 +1314,18 @@ button, button:hover, button:focus, button:active
         margin-right: 10px;
     }
 
-    #mobile-form__daten:checked + label::before {
+    #mobile-from-checkbox:checked + label::before {
         background-color: #E3B873;
-        background-image: url("../img/hacken.svg");
+        background-image: url("../images/checked.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
 
-    .mobile-form__daten-span {
-        color: #fff;
+    .mobile-form-check-span {
+        color: #FFFFFF;
     }
 
-    .mobile-form__submit {
+    .mobile-from-submit {
         font-family: Nunito Sans, sans-serif;
         display: block;
         margin: 0 auto 34px;
@@ -1243,11 +1335,11 @@ button, button:hover, button:focus, button:active
         margin-bottom: 50px;
     }
 
-    .kontakt-info__karte {
+    .contacts-info-map {
         width: 100%;
     }
 
-    .mobile-info__title {
+    .mobile-info-title {
         font-size: 18px;
         line-height: 138.6%;
         text-align: center;
@@ -1255,13 +1347,16 @@ button, button:hover, button:focus, button:active
         margin-top: 30px;
     }
 
-    .mobile-info__icon {
+    .mobile-info-icon {
         margin-top: 20px;
         text-align: center;
     }
 
-    .mobile-info__icon-margin {
+    .mobile-info-icon_mrg {
         margin-right: 15px;
+    }
+    .footer{
+        display:none;
     }
 
 } 
